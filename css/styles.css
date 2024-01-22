@@ -34,7 +34,7 @@ header {
 .nav-header{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(37, 37, 37, 0.551);
+    background-color: rgba(128, 128, 128, 0.494);
 }
 ul{
     list-style: none;
@@ -45,10 +45,19 @@ ul{
 }
 li{
     margin: 3px;
+    padding: 1px 4px;
+    border: 1px none rgb(0, 0, 0);
+    border-radius: 0.5rem;
+}
+li:hover{
+    background-color: rgb(255, 255, 255);
 }
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -67,7 +76,6 @@ form{
 .titulo-main {
     margin-top: 8px;
     margin-bottom: 8px;
-    border: 1px solid rgb(0, 0, 0);
     font-weight: 400;
 }
 .parrafo-size{
@@ -76,11 +84,42 @@ form{
 .img-servicios{
     height: 16rem;
 }
+.img-size{
+    width: 17rem;
+    height: 13rem;
+}
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card-item{
+    width: 18rem;
+}
+.carousel-padding{
+    padding: 10px;
+}
+
+@media only screen and (min-width: 500px){
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+    .img-servicios{
+        height: 22rem;
+    }
+}
 
 
 /* Inicio del footer */
 footer {
-    background-color: rgba(248,249,250);
+    background-color: #000;
 }
 .logos-size {
     width: 3rem;
@@ -94,6 +133,8 @@ footer {
 .footer-container {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 5px;
 }
 .logos-footer{
     display: flex;
@@ -101,4 +142,5 @@ footer {
 }
 .parrafo-footer{
     margin-bottom: 0;
+    color: #fff;
 }
