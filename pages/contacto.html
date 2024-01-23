@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+
+    <!-- Linkeo de Fuentes -->
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">">
+
+    <!-- Linkeo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Linkeo de CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     
+    <!-- Inicio del Header -->
+    <header>
+        <div class="oscurecerlo">
+            <div class="nav-header">
+                <img class="logo-hotel" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><button type="button" class="btn btn-dark">Inicio</button></a></li>
+                        <li><a href="./habitaciones.html"><button type="button" class="btn btn-dark">Habitaciones</button></a></li>
+                        <li><a href="./servicios.html"><button type="button" class="btn btn-dark">Servicios</button></a></li>
+                        <li><a href="./galeria.html"><button type="button" class="btn btn-dark">Galeria</button></a></li>
+                        <li><a href="./contacto.html"><button type="button" class="btn btn-dark">Contacto</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="h1-form">
+                <h1 class="centrar-texto">Bienvenidos al Hotel Avellaneda</h1>
+
+                <form class="centrar-texto">
+                    <label for="entrada">Fecha de Entrada</label>
+                    <input id="entrada" type="date">
+                    <label for="salida">Fecha de Salida</label>
+                    <input id="salida" type="date">
+                    <label for="personas">Personas</label>
+                    <select name="" id="personas">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="habitacion">Habitacion</label>
+                    <select name="" id="habitacion">
+                        <option value="">Doble</option>
+                        <option value="">Triple</option>
+                        <option value="">Familiar</option>
+                    </select>
+                    <button class="boton">Reservar</button>
+        
+                </form>
+            </div>
+                
+        </div>
+    </header>
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+    <main>
+        <h2 class="centrar-texto titulo-main">Contactanos</h2>
+        <p class="centrar-texto parrafo-size">Dejanos tu mensaje y/o consulta acerca del tema de tu interes. Estamos a tu disposicion para responderte cualquier duda que tengas.</p>
+        <form class="centrar-texto form-contacto">
+            <input placeholder="Nombre y Apellido" type="text">
+            <input placeholder="Correo electronico" type="email">
+            <input placeholder="Telefono" type="text">
+            <textarea placeholder="Mensaje" name="" id=""></textarea>
+            <button class="boton">Enviar mensaje</button>
+        </form>
+
+        <!-- Falta acomodar logos -->
+        <section>
+            <h3>Email</h3>
+            <p>hotelavellaneda@gmail.com</p>
+            <img class="logos-size" src="../img/mail-logo.png" alt="Logotipo de gmail">
+        </section>
+
+        <section>
+            <h3>Whatsapp</h3>
+            <p>+541122334455</p>
+            <img class="logos-size" src="../img/whatsapp-logo.jpeg" alt="Logtipo de whatsapp">
+        </section>
+
+        <section>
+            <h3>Telefono</h3>
+            <p>+541155443322</p>
+            <img class="logos-size" src="../img/telefono-logo.jpeg" alt="Logotipo de telefono">
+        </section>
+
+        <section class="mapa-container">
+            <h3>Ubicacion</h3>
+            <p>Donde nos encontramos y como llegar a nuestro hotel</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105073.23032163273!2d-58.367367!3d-34.615831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d434dad77b%3A0x75b7b0bd35cb0849!2sChile%2080%2C%20C1011%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1702914490445!5m2!1ses-419!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <!-- Fin del Main -->
+
+    <!-- Inicio del Footer -->
+    <footer>
+        <div class="footer-grid-container">
+            <p class="parrafo-redes">Seguinos en nuestras redes</p>
+            <div class="logos-footer">
+                <a href="https://www.facebook.com">
+                    <img class="logos-size" src="../img/facebook-logo.webp" alt="logotipo de facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="logos-size" src="../img/instagram-logo.webp" alt="logotipo de instagram">
+                </a>
+                <a href="https://www.tiktok.com">
+                    <img class="logos-size" src="../img/tiktok-logo.webp" alt="logotipo de tiktok">
+                </a>
+            </div>
+            <p class="centrar-texto parrafo-footer">Todos los derechos reservados</p>
+            <img class="logo-hotel-footer" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                        
+        </div>
+        
+    </footer>
+    <!-- Fin del Footer -->
+
+    <!-- Linkeo de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
