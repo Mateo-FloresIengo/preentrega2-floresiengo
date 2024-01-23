@@ -3,9 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galeria</title>
+
+    <!-- Linkeo de Fuentes -->
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">">
+
+    <!-- Linkeo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Linkeo de CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     
+    <!-- Inicio del Header -->
+    <header>
+        <div class="oscurecerlo">
+            <div class="nav-header">
+                <img class="logo-hotel" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><button type="button" class="btn btn-dark">Inicio</button></a></li>
+                        <li><a href="./habitaciones.html"><button type="button" class="btn btn-dark">Habitaciones</button></a></li>
+                        <li><a href="./servicios.html"><button type="button" class="btn btn-dark">Servicios</button></a></li>
+                        <li><a href="./galeria.html"><button type="button" class="btn btn-dark">Galeria</button></a></li>
+                        <li><a href="./contacto.html"><button type="button" class="btn btn-dark">Contacto</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="h1-form">
+                <h1 class="centrar-texto">Bienvenidos al Hotel Avellaneda</h1>
+
+                <form class="centrar-texto">
+                    <label for="entrada">Fecha de Entrada</label>
+                    <input id="entrada" type="date">
+                    <label for="salida">Fecha de Salida</label>
+                    <input id="salida" type="date">
+                    <label for="personas">Personas</label>
+                    <select name="" id="personas">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="habitacion">Habitacion</label>
+                    <select name="" id="habitacion">
+                        <option value="">Doble</option>
+                        <option value="">Triple</option>
+                        <option value="">Familiar</option>
+                    </select>
+                    <button class="boton">Reservar</button>
+        
+                </form>
+            </div>
+                
+        </div>
+    </header>
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+    <main>
+        <h2 class="centrar-texto titulo-main">Fotos</h2>
+        <p class="centrar-texto parrafo-size">El hotel en imagenes</p>
+        <div class="img-galeria">
+            <img class="img-size" src="../img/lobby.jpeg" alt="imagen del lobby">
+            <img class="img-size" src="../img/recepcion.webp" alt="imagen de la recepcion">
+            <img class="img-size" src="../img/lobby-2.jpeg" alt="imagen del lobby">
+            <img class="img-size" src="../img/recepcion-2.jpeg" alt="imagen de la recepcion">
+            <img class="img-size" src="../img/desayuno-2.jpeg" alt="imagen del desayuno">
+            <img class="img-size" src="../img/desayuno-4.jpeg" alt="imagen del desayuno">
+            <img class="img-size" src="../img/restaurante-4.jpeg" alt="imagen del restaurante">
+            <img class="img-size" src="../img/restaurante-5.jpeg" alt="imagen del restaurante">
+            <img class="img-size" src="../img/estacionamiento.jpeg" alt="imagen del estacionamiento">
+            <img class="img-size" src="../img/gimnasio-4.jpeg" alt="imagen del gimnasio">
+            <img class="img-size" src="../img/gimnasio-5.jpeg" alt="imagen del gimnasio">
+            <img class="img-size" src="../img/piscina.jpeg" alt="imagen de la piscina">
+            <img class="img-size" src="../img/piscina-3.jpeg" alt="imagen de la piscina">
+            <img class="img-size" src="../img/hab-doble-4.jpeg" alt="imagen de habitacion doble">
+            <img class="img-size" src="../img/hab-doble-5.jpeg" alt="imagen de habitacion doble">
+            <img class="img-size" src="../img/baño.jpeg" alt="imagen del baño">
+            <img class="img-size" src="../img/hab-triple-3.jpeg" alt="imagen de habitacion triple">
+            <img class="img-size" src="../img/hab-triple-4.jpeg" alt="imagen de habitacion triple">
+            <img class="img-size" src="../img/baño-3.jpeg" alt="imagen del baño">
+            <img class="img-size" src="../img/hab-familiar-4.jpeg" alt="imagen de habitacion familiar">
+        </div>
+    </main>
+
+    <!-- Fin del Main -->
+
+    <!-- Inicio del Footer -->
+    <footer>
+        <div class="footer-grid-container">
+            <p class="parrafo-redes">Seguinos en nuestras redes</p>
+            <div class="logos-footer">
+                <a href="https://www.facebook.com">
+                    <img class="logos-size" src="../img/facebook-logo.webp" alt="logotipo de facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="logos-size" src="../img/instagram-logo.webp" alt="logotipo de instagram">
+                </a>
+                <a href="https://www.tiktok.com">
+                    <img class="logos-size" src="../img/tiktok-logo.webp" alt="logotipo de tiktok">
+                </a>
+            </div>
+            <p class="centrar-texto parrafo-footer">Todos los derechos reservados</p>
+            <img class="logo-hotel-footer" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                        
+        </div>
+        
+    </footer>
+    <!-- Fin del Footer -->
+
+    <!-- Linkeo de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

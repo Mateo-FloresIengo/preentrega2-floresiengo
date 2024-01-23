@@ -143,6 +143,14 @@ h5{
     align-items: center;
     padding: 15px;
 }
+.img-galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px 10px;
+}
 
 @media only screen and (min-width: 500px){
     .cards-container{
