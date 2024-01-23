@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Habitaciones</title>
+
+    <!-- Linkeo de Fuentes -->
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">">
+
+    <!-- Linkeo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Linkeo de CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
+
+    <!-- Inicio del Header -->
+    <header>
+        <div class="oscurecerlo">
+            <div class="nav-header">
+                <img class="logo-hotel" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><button type="button" class="btn btn-dark">Inicio</button></a></li>
+                        <li><a href="./habitaciones.html"><button type="button" class="btn btn-dark">Habitaciones</button></a></li>
+                        <li><a href="./servicios.html"><button type="button" class="btn btn-dark">Servicios</button></a></li>
+                        <li><a href="./galeria.html"><button type="button" class="btn btn-dark">Galeria</button></a></li>
+                        <li><a href="./contacto.html"><button type="button" class="btn btn-dark">Contacto</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="h1-form">
+                <h1 class="centrar-texto">Bienvenidos al Hotel Avellaneda</h1>
+
+                <form class="centrar-texto">
+                    <label for="entrada">Fecha de Entrada</label>
+                    <input id="entrada" type="date">
+                    <label for="salida">Fecha de Salida</label>
+                    <input id="salida" type="date">
+                    <label for="personas">Personas</label>
+                    <select name="" id="personas">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="habitacion">Habitacion</label>
+                    <select name="" id="habitacion">
+                        <option value="">Doble</option>
+                        <option value="">Triple</option>
+                        <option value="">Familiar</option>
+                    </select>
+                    <button class="boton">Reservar</button>
+        
+                </form>
+            </div>
+                
+        </div>
+    </header>
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+    <main>
+        <h2 class="centrar-texto titulo-main">Nuestras Habitaciones</h2>
+        <p class="centrar-texto parrafo-size">Siempre pensando en satisfacer a nuestros huéspedes, ofrecemos confort,  modernidad y estilo. Con todas las comodidades que ofrecemos, nos aseguramos de que su estadía sea lo más placentera posible.</p>
+
+        <section class="card-hab-container">
+            <div class="item-uno centrar-texto">
+                <h5 class="centrar-texto">Habitacion Doble</h5>
+                <p class="centrar-texto">Habitacion de un ambiente con una cama doble y con baño privado.</p>
+                <div class="img-items">
+                    <img class="img-size" src="../img/hab-doble-2.jpeg" alt="Imagen de habitacion doble">
+                    <img class="img-size" src="../img/hab-doble-3.jpeg" alt="Imagen de habitacion doble">
+                    <img class="img-size" src="../img/hab-doble-4.jpeg" alt="Imagen de habitacion doble">
+                </div>
+                
+            </div>
+            <div class="item-dos centrar-texto">
+                <h5 class="centrar-texto">Habitacion Triple</h5>
+                <p class="centrar-texto">Habitacion de un ambiente con una cama doble y una cama twin, con baño privado.</p>
+                <div class="img-items">
+                    <img class="img-size" src="../img/habitacion-triple.jpeg" alt="Imagen de habitacion triple">
+                    <img class="img-size" src="../img/hab-triple-2.jpeg" alt="Imagen de habitacion triple">
+                    <img class="img-size" src="../img/hab-triple-3.jpeg" alt="Imagen de habitacion triple">
+                </div>
+            </div>
+            <div class="item-tres centrar-texto">
+                <h5 class="centrar-texto">Habitacion Familiar</h5>
+                <p class="centrar-texto">Habitacion de un ambiente con una cama doble y dos camas twin, con baño privado.</p>
+                <div class="img-items">
+                    <img class="img-size" src="../img/habitacion-familiar.jpeg" alt="Imagen de habitacion familiar">
+                    <img class="img-size" src="../img/hab-familiar-2.jpeg" alt="Imagen de habitacion familiar">
+                    <img class="img-size" src="../img/hab-familiar-3.jpeg" alt="Imagen de habitacion familiar">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Inicio del Footer -->
+    <footer>
+        <div class="footer-grid-container">
+            <p class="parrafo-redes">Seguinos en nuestras redes</p>
+            <div class="logos-footer">
+                <a href="https://www.facebook.com">
+                    <img class="logos-size" src="../img/facebook-logo.webp" alt="logotipo de facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="logos-size" src="../img/instagram-logo.webp" alt="logotipo de instagram">
+                </a>
+                <a href="https://www.tiktok.com">
+                    <img class="logos-size" src="../img/tiktok-logo.webp" alt="logotipo de tiktok">
+                </a>
+            </div>
+            <p class="centrar-texto parrafo-footer">Todos los derechos reservados</p>
+            <img class="logo-hotel-footer" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                        
+        </div>
+        
+    </footer>
+    <!-- Fin del Footer -->
+
+
+    <!-- Linkeo de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,6 +9,9 @@ body {
 .centrar-texto{
     text-align: center;
 }
+p{
+    margin-bottom: 0;
+}
 
 /* Inicio del header */
 header {
@@ -46,21 +49,9 @@ ul{
     margin-bottom: 0;
 }
 li{
-    margin: 3px;
-    padding: 1px 4px;
-    border: 1px none rgb(0, 0, 0);
-    border-radius: 0.5rem;
+    margin: 2px;
 }
-li:hover{
-    background-color: #000;
-}
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-a:hover{
-    color: rgb(255, 255, 255);
-}
+
 
 h1 {
     color: rgb(255, 255, 255);
@@ -79,7 +70,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 32vh;
 }
 input{
     background-color: rgba(128, 128, 128, 0.486);
@@ -105,6 +96,7 @@ select{
 }
 .parrafo-size{
     font-size: 1rem;
+    padding: 0 12px;
 }
 h5{
     margin-top: 0.5rem;
@@ -128,6 +120,21 @@ h5{
 }
 .carousel-padding{
     padding: 10px;
+}
+.card-hab-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.img-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 500px){
@@ -168,17 +175,6 @@ footer {
     height: 2rem;
 }
 
-
-/* .footer-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 0 5px;
-}
-.logos-footer{
-    display: flex;
-    flex-direction: row;
-} */
 .footer-grid-container{
     display: grid;
     grid-template-rows: 50px 50px;
@@ -218,10 +214,5 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
     }
-    /* .parrafo-redes{
-        justify-self: center;
-    }
-    .logos-footer{
-        justify-self: center;
-    } */
+    
 }
