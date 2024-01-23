@@ -106,6 +106,9 @@ select{
 .parrafo-size{
     font-size: 1rem;
 }
+h5{
+    margin-top: 0.5rem;
+}
 .img-servicios{
     height: 16rem;
 }
@@ -134,10 +137,24 @@ select{
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .img-servicios{
         height: 22rem;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .img-servicios{
+        height: 35rem;
     }
 }
 
@@ -147,15 +164,12 @@ footer {
     background-color: #000;
 }
 .logos-size {
-    width: 3rem;
-    height: 3rem;
-}
-.logos-size:hover {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
-.footer-container {
+
+/* .footer-container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -163,9 +177,51 @@ footer {
 }
 .logos-footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+} */
+.footer-grid-container{
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+}
+.logos-footer{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.logo-hotel-footer{
+    width: 3rem;
+    height: 3rem;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: end;
 }
 .parrafo-footer{
     margin-bottom: 0;
     color: #fff;
+    font-weight: 100;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.parrafo-redes{
+    color: #fff;
+    font-weight: 100;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 900px){
+    .footer-grid-container{
+        display: grid;
+        grid-template-rows: 40px 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    /* .parrafo-redes{
+        justify-self: center;
+    }
+    .logos-footer{
+        justify-self: center;
+    } */
 }
