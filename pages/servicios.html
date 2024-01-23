@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicios</title>
+
+    <!-- Linkeo de Fuentes -->
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">">
+
+    <!-- Linkeo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Linkeo de CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
+    <!-- Inicio del Header -->
+    <header>
+        <div class="oscurecerlo">
+            <div class="nav-header">
+                <img class="logo-hotel" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><button type="button" class="btn btn-dark">Inicio</button></a></li>
+                        <li><a href="./habitaciones.html"><button type="button" class="btn btn-dark">Habitaciones</button></a></li>
+                        <li><a href="./servicios.html"><button type="button" class="btn btn-dark">Servicios</button></a></li>
+                        <li><a href="./galeria.html"><button type="button" class="btn btn-dark">Galeria</button></a></li>
+                        <li><a href="./contacto.html"><button type="button" class="btn btn-dark">Contacto</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="h1-form">
+                <h1 class="centrar-texto">Bienvenidos al Hotel Avellaneda</h1>
+
+                <form class="centrar-texto">
+                    <label for="entrada">Fecha de Entrada</label>
+                    <input id="entrada" type="date">
+                    <label for="salida">Fecha de Salida</label>
+                    <input id="salida" type="date">
+                    <label for="personas">Personas</label>
+                    <select name="" id="personas">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="habitacion">Habitacion</label>
+                    <select name="" id="habitacion">
+                        <option value="">Doble</option>
+                        <option value="">Triple</option>
+                        <option value="">Familiar</option>
+                    </select>
+                    <button class="boton">Reservar</button>
+        
+                </form>
+            </div>
+                
+        </div>
+    </header>
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+    <main>
+        <div>
+            <h2 class="centrar-texto titulo-main">Servicios que brindamos</h2>
+            <p class="centrar-texto parrafo-size">Para hacerte mas agradable la estancia en nuestro hotel, contamos con una serie de servicios que te permitiran disfrutar al maximo de tu paso por la ciudad.</p>
+        </div>
+
+        <section class="cards-servicios">
+            <div class="card-item">
+                <img class="img-size img-servicios" src="../img/estacionamiento.jpeg" alt="Imagen de estacionamiento">
+                <h5>Estacionamiento</h5>
+                <p>Para que puedas estacionar sin dificultad en el centro de la ciudad, dispones de un estacionamiento privado, en el que tu vehiculo se encontrara totalmente seguro. Te sentiras como en casa al tener tu vehiculo estacionado en el garaje y no vas a tener que perder tiempo buscando estacionamiento.</p>
+            </div>
+            <div class="card-item">
+                <img class="img-size img-servicios" src="../img/gimnasio-2.jpeg" alt="Imagen de gimnasio">
+                <h5>Gimnasio</h5>
+                <p>Ubicado en la primera planta del hotel, contamos con un equipado gimnasio que dispone de una gran variedad de máquinas. Es el lugar ideal para olvidarse del estrés y mantenerse en forma. Para hacer más llevadero el ejercicio, el gimnasio cuenta con hilo musical y televisión, además de dos amplios vestuarios, masculino y femenino. Lo encontrarás disponible de lunes a domingo, las 24 horas del día.</p>
+            </div>
+            <div class="card-item">
+                <img class="img-size img-servicios" src="../img/piscina.jpeg" alt="Imagen de piscina">
+                <h5>Piscina</h5>
+                <p>Ubicada en la terraza del hotel, podras disfrutar de una amplia piscina de 10 m x 5 m, la cual es de uso gratuito y explusivo para los clientes alojados. Abierta de lunes a domingos, de 10:00hs a 20:00hs</p>
+            </div>
+            <div class="card-item">
+                <img class="img-size img-servicios" src="../img/restaurante-4.jpeg" alt="Imagen de restaurante">
+                <h5>Restaurante</h5>
+                <p>El restaurante del hotel es un agradable lugar donde poder venir a desayunar, almorzar o cenar en un ambiente tranquilo. A traves de sus grandes cristaleras podras vislumbrar el pulso de la ciudad. De lunes a domingo, de 09:00hs a 00:00hs.</p>
+            </div>
+            <div class="card-item">
+                <img class="img-size img-servicios" src="../img/desayuno-2.jpeg" alt="Imagen de desayuno">
+                <h5>Desayunos</h5>
+                <p>Situado en la planta baja, junto a la recepcion se encuentra nuestro desayunador, donde cada mañana podras degustar un sabroso buffet, compuesto por gran variedad de alimentos, jugos naturales, platos frios y calientes. La mejor forma de empezar el dia y cargar las baterias para tus actividades en la ciudad.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Fin del Main -->
     
+    <!-- Inicio del Footer -->
+    <footer>
+        <div class="footer-grid-container">
+            <p class="parrafo-redes">Seguinos en nuestras redes</p>
+            <div class="logos-footer">
+                <a href="https://www.facebook.com">
+                    <img class="logos-size" src="../img/facebook-logo.webp" alt="logotipo de facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="logos-size" src="../img/instagram-logo.webp" alt="logotipo de instagram">
+                </a>
+                <a href="https://www.tiktok.com">
+                    <img class="logos-size" src="../img/tiktok-logo.webp" alt="logotipo de tiktok">
+                </a>
+            </div>
+            <p class="centrar-texto parrafo-footer">Todos los derechos reservados</p>
+            <img class="logo-hotel-footer" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
+                        
+        </div>
+        
+    </footer>
+    <!-- Fin del Footer -->
+
+    <!-- Linkeo de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

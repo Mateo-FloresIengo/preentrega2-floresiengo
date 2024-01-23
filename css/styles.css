@@ -101,7 +101,7 @@ select{
 h5{
     margin-top: 0.5rem;
 }
-.img-servicios{
+.img-carousel{
     height: 16rem;
 }
 .img-size{
@@ -136,6 +136,13 @@ h5{
     gap: 1rem;
     justify-content: center;
 }
+.cards-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
 
 @media only screen and (min-width: 500px){
     .cards-container{
@@ -146,8 +153,16 @@ h5{
         align-items: stretch;
         gap: 1rem;
     }
-    .img-servicios{
+    .img-carousel{
         height: 22rem;
+    }
+    .cards-servicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
     }
 }
 
@@ -160,8 +175,18 @@ h5{
         align-items: stretch;
         gap: 1rem;
     }
-    .img-servicios{
+    .img-carousel{
         height: 35rem;
+    }
+    .cards-servicios{
+        gap: 2rem;
+    }
+    .card-item{
+        width: 23rem;
+    }
+    .img-servicios{
+        width: 23rem;
+        height: 16rem;
     }
 }
 
