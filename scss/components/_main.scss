@@ -1,0 +1,128 @@
+.titulo-main {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.parrafo-size{
+    font-size: 1rem;
+    padding: 0 12px;
+}
+h5{
+    margin-top: 0.5rem;
+}
+.img-carousel{
+    height: 16rem;
+}
+.img-size{
+    width: 17rem;
+    height: 13rem;
+}
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card-item{
+    width: 18rem;
+}
+.carousel-padding{
+    padding: 10px;
+}
+.card-hab-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.img-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.cards-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.img-galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px 10px;
+}
+.form-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    row-gap: 0.5rem;
+}
+.mapa-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Adaptacion media query */
+@media only screen and (min-width: 600px){
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .img-carousel{
+        height: 22rem;
+    }
+    .cards-servicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    iframe{
+        max-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .img-carousel{
+        height: 35rem;
+    }
+    .cards-servicios{
+        gap: 2rem;
+    }
+    .card-item{
+        width: 23rem;
+    }
+    .img-servicios{
+        width: 23rem;
+        height: 16rem;
+    }
+    iframe{
+        max-width: 50%;
+    }
+}
