@@ -1,50 +1,41 @@
 footer {
-    background-color: #000;
+    background-color: #081c15e7;
+    color: #fff;
 }
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    padding: 25px 0;
+    text-align: center;
+
+    .footer-container-item{
+        margin: 0 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+.derechos-reservados{
+    padding-bottom: 20px;
+}
+
 .logos-size {
     width: 2rem;
     height: 2rem;
 }
 
-.footer-grid-container{
-    display: grid;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: end;
-}
-.logos-footer{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.logo-hotel-footer{
-    width: 3rem;
-    height: 3rem;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-self: end;
-}
-.parrafo-footer{
-    margin-bottom: 0;
-    color: #fff;
-    font-weight: 100;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.parrafo-redes{
-    color: #fff;
-    font-weight: 100;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-bottom: 0;
+.separador{
+    height: 1px;
+    background-color: #D8F3DC;
+    margin: 15px;
 }
 
-/* Adaptacion media query */
-@media only screen and (min-width: 900px){
-    .footer-grid-container{
-        display: grid;
-        grid-template-rows: 40px 50px;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-    }
-    
-}

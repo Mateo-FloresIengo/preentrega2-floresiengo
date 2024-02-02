@@ -1,0 +1,65 @@
+@media only screen and (min-width: 600px){
+    h1{
+        font-size: 5rem;
+    }
+    .section-reservas{
+        .reservas-form{
+            .flex-form{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
+    .h2-container{
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+   
+    .cards-servicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    iframe{
+        max-width: 75%;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: stretch;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    h1{
+        font-size: 6rem;
+    }
+    .h2-container{
+        h2{
+            font-size: 3.5rem;
+        }
+    }
+    
+    .cards-servicios{
+        gap: 2rem;
+    }
+    .card-item{
+        width: 23rem;
+    }
+    .img-servicios{
+        width: 23rem;
+        height: 16rem;
+    }
+    iframe{
+        max-width: 50%;
+    }
+}

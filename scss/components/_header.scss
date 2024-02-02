@@ -15,56 +15,47 @@ header {
 }
 
 .logo-hotel {
-    width: 4rem;
-    height: 4rem;
-}
-.nav-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d8f3dc7d;
-}
-ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-li{
-    margin: 2px;
+    width: 3rem;
+    height: 3rem;
 }
 
 
-h1{
+nav {
+    background-color: #D8F3DC;
+
+    .navbar-brand {
+        font-size: 1rem;
+        .logo-hotel{
+            margin-right: 10px;
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+
+        .navbar-nav {
+            display: flex;
+            align-items: flex-end;
+
+            .nav-link{
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all .4s;
+                }
+            }
+        }
+    }
+
+}
+
+
+h1 {
     color: rgb(255, 255, 255);
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    margin-top: 20rem;
 }
-form{
-    color: rgb(255, 255, 255);
-    font-weight: 100;
-    padding: 0 10px;
-}
-.h1-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 82vh;
-}
-input{
-    background-color: rgba(128, 128, 128, 0.486);
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-}
-select{
-    background-color: rgba(128, 128, 128, 0.486);
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-}
-.boton{
+
+.boton {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }

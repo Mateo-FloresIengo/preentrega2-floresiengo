@@ -1,179 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Avellaneda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Avellaneda</title>
 
-    <!-- Linkeo de normalize -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <!-- Linkeo de Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Linkeo de normalize -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!-- Linkeo de Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
 
-    <!-- Linkeo de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Linkeo de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Linkeo de CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Linkeo de CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <!-- Inicio del Header -->
-    <header>
-        <div class="oscurecerlo">
-            <div class="nav-header">
-                <img class="logo-hotel" src="img/hotel-logo.PNG" alt="logotipo del hotel">
-                <nav>
-                    <ul>
-                      <li><a href="../index.html"><button type="button" class="btn btn-dark">Inicio</button></a></li>
-                      <li><a href="pages/habitaciones.html"><button type="button" class="btn btn-dark">Habitaciones</button></a></li>
-                      <li><a href="pages/servicios.html"><button type="button" class="btn btn-dark">Servicios</button></a></li>
-                      <li><a href="pages/galeria.html"><button type="button" class="btn btn-dark">Galeria</button></a></li>
-                      <li><a href="pages/contacto.html"><button type="button" class="btn btn-dark">Contacto</button></a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="h1-form">
-                <h1 class="centrar-texto merriweather-bold-italic">Hotel Avellaneda</h1>
-
-                <form class="centrar-texto">
-                    <label for="entrada">Fecha de Entrada</label>
-                    <input id="entrada" type="date">
-                    <label for="salida">Fecha de Salida</label>
-                    <input id="salida" type="date">
-                    <label for="personas">Personas</label>
-                    <select name="" id="personas">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select>
-                    <label for="habitacion">Habitacion</label>
-                    <select name="" id="habitacion">
-                        <option value="">Doble</option>
-                        <option value="">Triple</option>
-                        <option value="">Familiar</option>
-                    </select>
-                    <button class="boton">Reservar</button>
-        
-                </form>
-            </div>
-                
-        </div>
-    </header>
-    <!-- Fin del Header -->
-
-    <!-- Inicio del Main -->
-    <main>
-        
-        <h2 class="centrar-texto titulo-main merriweather-regular-italic">Nuestras Habitaciones</h2>
-        <p class="centrar-texto parrafo-size">Siempre pensando en satisfacer a nuestros huéspedes, ofrecemos confort,  modernidad y estilo. Con todas las comodidades que ofrecemos, nos aseguramos de que su estadía sea lo más placentera posible.</p>
-
-        <section class="cards-container">
-            <div class="card-item centrar-texto">
-                <img class="img-size" src="img/hab-doble-2.jpeg" alt="Imagen de habitacion doble">
-                <h3 class="centrar-texto">Habitacion Doble</h3>
-                <p class="centrar-texto">Habitacion de un ambiente con una cama doble y con baño privado.</p>
-            </div>
-            <div class="card-item centrar-texto">
-                <img class="img-size" src="img/habitacion-triple.jpeg" alt="Imagen de habitacion triple">
-                <h3 class="centrar-texto">Habitacion Triple</h3>
-                <p class="centrar-texto">Habitacion de un ambiente con una cama doble y una cama twin, con baño privado.</p>
-            </div>
-            <div class="card-item centrar-texto">
-                <img class="img-size" src="img/habitacion-familiar.jpeg" alt="Imagen de habitacion familiar">
-                <h3 class="centrar-texto">Habitacion Familiar</h3>
-                <p class="centrar-texto">Habitacion de un ambiente con una cama doble y dos camas twin, con baño privado.</p>
-            </div>
-        </section>
-        
-
-        <div>
-            <h2 class="centrar-texto titulo-main merriweather-regular-italic">Servicios que brindamos</h2>
-            <p class="centrar-texto parrafo-size">Para hacerte mas agradable la estancia en nuestro hotel, contamos con una serie de servicios que te permitiran disfrutar al maximo de tu paso por la ciudad.</p>
-        </div>
-
-        <div id="carouselExampleCaptions" class="carousel slide carousel-padding">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/estacionamiento.jpeg" class="d-block w-100 img-carousel" alt="imagen de estacionamiento">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Estacionamiento Privado</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/gimnasio-2.jpeg" class="d-block w-100 img-carousel" alt="imagen de gimnasio">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Gimnasio</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/piscina.jpeg" class="d-block w-100 img-carousel" alt="imagen de piscina">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Piscina</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/restaurante-4.jpeg" class="d-block w-100 img-carousel" alt="imagen de restaurante">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Restaurante</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/desayuno-2.jpeg" class="d-block w-100 img-carousel" alt="imagen de desayuno">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Desayunador</h3>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <!-- Inicio del Header -->
+  <header>
+    <div class="oscurecerlo">
+      
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logo-hotel" src="img/hotel-logo.PNG" alt="logotipo del hotel">Hotel Avellaneda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/habitaciones.html">Habitaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-        
-
-    </main>
-    <!-- Fin del Main -->
-    
-    <!-- Inicio del Footer -->
-    <footer>
-        <div class="footer-grid-container">
-            <p class="parrafo-redes">Seguinos en nuestras redes</p>
-            <div class="logos-footer">
-                <a target="_blank" href="https://www.facebook.com">
-                    <img class="logos-size" src="img/facebook-logo.webp" alt="logotipo de facebook">
-                </a>
-                <a target="_blank" href="https://www.instagram.com">
-                    <img class="logos-size" src="img/instagram-logo.webp" alt="logotipo de instagram">
-                </a>
-                <a target="_blank" href="https://www.tiktok.com">
-                    <img class="logos-size" src="img/tiktok-logo.webp" alt="logotipo de tiktok">
-                </a>
-            </div>
-            <p class="centrar-texto parrafo-footer">Todos los derechos reservados</p>
-            <img class="logo-hotel-footer" src="img/hotel-logo.PNG" alt="logotipo del hotel">
-                        
         </div>
-        
-    </footer>
-    <!-- Fin del Footer -->
+      </nav>
+
+      <div>
+        <h1 class="centrar-texto merriweather-regular-italic">Hotel Avellaneda</h1>
+      </div>
+
+    </div>
+
+  </header>
+  <!-- Fin del Header -->
+
+  <!-- Inicio del Main -->
+  <main>
+
+    <section class="section-reservas">
+      <div class="reservas-header">
+        <div class="reservas-linea"></div>
+        <h2 class="reservas-titulo">Reservar</h2>
+        <div class="reservas-linea"></div>
+      </div>
+
+      <div class="reservas-form">
+        <form>
+          <div class="flex-form">
+            <div class="form-item">
+              <label for="entrada">Fecha de Entrada</label>
+              <div>
+                <input id="entrada" type="date">
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="salida">Fecha de Salida</label>
+              <div>
+                <input id="salida" type="date">
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="personas">Personas</label>
+              <div>
+                <select name="" id="personas">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="habitacion">Habitacion</label>
+              <div>
+                <select name="" id="habitacion">
+                  <option value="">Doble</option>
+                  <option value="">Triple</option>
+                  <option value="">Familiar</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-item">
+              <button class="reservas-boton">Reservar</button>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+
+    <div class="h2-container">
+      <h2 class="centrar-texto merriweather-light-italic">Nuestras Habitaciones</h2>
+      <p class="centrar-texto parrafo-size">Siempre pensando en satisfacer a nuestros huéspedes, ofrecemos confort,
+      modernidad y estilo. Con todas las comodidades que ofrecemos, nos aseguramos de que su estadía sea lo más
+      placentera posible.</p>
+    </div>
+
+    <section class="cards-container">
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/hab-doble-2.jpeg" class="card-img-top" alt="Imagen de habitacion doble">
+        <div class="card-body">
+          <h3 class="card-title">Habitacion Doble</h3>
+          <a href="pages/habitaciones.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/habitacion-triple.jpeg" class="card-img-top" alt="Imagen de habitacion triple">
+        <div class="card-body">
+          <h3 class="card-title">Habitacion Triple</h3>
+          <a href="pages/habitaciones.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/habitacion-familiar.jpeg" class="card-img-top" alt="Imagen de habitacion familiar">
+        <div class="card-body">
+          <h3 class="card-title">Habitacion Familiar</h3>
+          <a href="pages/habitaciones.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </section>
 
 
-    <!-- Linkeo de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="h2-container">
+      <h2 class="centrar-texto merriweather-light-italic">Servicios que brindamos</h2>
+      <p class="centrar-texto parrafo-size">Para hacerte mas agradable la estancia en nuestro hotel, contamos con una
+      serie de servicios que te permitiran disfrutar al maximo de tu paso por la ciudad.</p>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-padding" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/estacionamiento.jpeg" class="d-block w-100 img-carousel" alt="imagen de estacionamiento">
+          <div class="carousel-caption d-block">
+            <h3>Estacionamiento Privado</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/gimnasio-2.jpeg" class="d-block w-100 img-carousel" alt="imagen de gimnasio">
+          <div class="carousel-caption d-block">
+            <h3>Gimnasio</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/piscina.jpeg" class="d-block w-100 img-carousel" alt="imagen de piscina">
+          <div class="carousel-caption d-block">
+            <h3>Piscina</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/restaurante-4.jpeg" class="d-block w-100 img-carousel" alt="imagen de restaurante">
+          <div class="carousel-caption d-block">
+            <h3>Restaurante</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/desayuno-2.jpeg" class="d-block w-100 img-carousel" alt="imagen de desayuno">
+          <div class="carousel-caption d-block">
+            <h3>Desayunador</h3>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="h2-container">
+      <h2 class="centrar-texto merriweather-light-italic">Galeria</h2>
+      <p class="centrar-texto parrafo-size">Visita la galeria de fotos para conocer nuestro hotel en profundidad.</p>
+    </div>
+
+    <div class="galeria-container">
+      <div class="galeria-cards">
+        <img class="img-size card" src="img/lobby.jpeg" alt="imagen del lobby">
+        <img class="img-size card" src="img/recepcion.webp" alt="imagen de la recepcion">
+        <img class="img-size card" src="img/lobby-2.jpeg" alt="imagen del lobby 2">
+        <img class="img-size card" src="img/recepcion-2.jpeg" alt="imagen de la recepcion 2">
+      </div>
+      <div class="boton-galeria">
+        <a href="pages/galeria.html" class="btn btn-primary">Ir a la Galeria</a>
+      </div>
+    </div>
+    
+
+  </main>
+  <!-- Fin del Main -->
+
+  <!-- Inicio del Footer -->
+  <footer>
+
+    <div class="footer-container">
+      <div class="footer-container-item">
+        <h4>CONTACTO</h4>
+        <div>
+          <img class="logos-size" src="img/img-ubicacion.svg" alt="logotipo de ubicacion">
+          <h5>Ubicacion</h5>
+          <p>Chile 80, Puerto Madero. CABA</p>
+        </div>
+        <div>
+          <img class="logos-size" src="img/img-mail.svg" alt="logotipo de mail">
+          <p>hotelavellaneda@gmail.com</p>
+        </div>
+        <div>
+          <img class="logos-size" src="img/img-telefono.svg" alt="logotipo de telefono">
+          <p>+54 1155443322</p>
+        </div>
+      </div>
+
+      <div class="footer-container-item">
+        <h4>REDES SOCIALES</h4>
+        <div>
+          <a target="_blank" href="https://www.facebook.com">
+            <img class="logos-size" src="img/img-facebook.svg" alt="logotipo de facebook">
+            <p>Hotel Avellaneda</p>
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.instagram.com">
+            <img class="logos-size" src="img/img-instagram.svg" alt="logotipo de instagram">
+            <p>@hotelavellaneda</p>
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.tiktok.com">
+            <img class="logos-size" src="img/img-tiktok.svg" alt="logotipo de tiktok">
+            <p>@hotelavellaneda</p>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="separador"></div>
+    <div class="derechos-reservados centrar-texto">
+      <p>© 2024 HOTEL AVELLANEDA. TODOS LOS DERECHOS RESERVADOS</p>
+    </div>
+
+
+  </footer>
+  <!-- Fin del Footer -->
+
+
+  <!-- Linkeo de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
