@@ -1,10 +1,11 @@
-@media only screen and (min-width: 600px){
-    h1{
+@media only screen and (min-width: 600px) {
+    h1 {
         font-size: 5rem;
     }
-    .section-reservas{
-        .reservas-form{
-            .flex-form{
+
+    .section-reservas {
+        .reservas-form {
+            .flex-form {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -13,53 +14,127 @@
             }
         }
     }
-    
-    .h2-container{
-        padding-left: 48px;
-        padding-right: 48px;
-    }
-   
-    .cards-servicios{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        gap: 1rem;
-    }
-    iframe{
-        max-width: 75%;
+
+    .h2-container {
+        margin-right: 40px;
+        margin-left: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
 
-    .footer-container{
+    .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: start;
         justify-items: center;
-        align-items: stretch;
+    }
+
+    .habitaciones-container {
+        .habitaciones-titulos {
+            margin: 15px 60px;
+        }
+    }
+
+    .habitacion-cards {
+        .img-size {
+            width: 20rem;
+            height: 16rem;
+        }
+    }
+
+    .cards-servicios-container {
+        .card {
+            width: 40%;
+        }
+    }
+
+    .grid-contacto-container {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 2rem;
+
+        .grid-contacto-item{
+            grid-column: 1/2;
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+        }
+        .mail {
+            
+            grid-row: 1/2;
+
+            img {
+                grid-row: 1/3;
+            }
+        }
+
+        .whatsapp {
+            grid-row: 2/3;
+
+            img {
+                grid-row: 1/3;
+            }
+        }
+
+        .telefono {
+            grid-row: 3/4;
+            img {
+                grid-row: 1/3;
+            }
+        }
+
+        .mapa {
+            grid-column: 3/5;
+            grid-row: 1/4;
+            iframe{
+                grid-column: 1/7;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 1024px){
-    h1{
+@media only screen and (min-width: 1024px) {
+    h1 {
         font-size: 6rem;
     }
-    .h2-container{
-        h2{
+
+    .h2-container {
+        padding-left: 200px;
+        padding-right: 200px;
+
+        h2 {
             font-size: 3.5rem;
         }
     }
-    
-    .cards-servicios{
+
+    .habitaciones-container {
+        .habitaciones-titulos {
+            margin: 15px 100px;
+        }
+    }
+
+    .habitacion-cards {
+        .img-size {
+            width: 30rem;
+            height: 24rem;
+        }
+    }
+
+    .cards-servicios {
         gap: 2rem;
     }
-    .card-item{
+
+    .card-item {
         width: 23rem;
     }
-    .img-servicios{
+
+    .img-servicios {
         width: 23rem;
         height: 16rem;
     }
-    iframe{
-        max-width: 50%;
+
+    .grid-contacto-container{
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }

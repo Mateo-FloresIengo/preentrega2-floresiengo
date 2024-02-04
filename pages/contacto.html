@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,67 +9,127 @@
     <!-- Linkeo de normalize -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- Linkeo de Fuentes -->
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Linkeo de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Linkeo de CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    
+
     <!-- Inicio del Header -->
     <header>
         <div class="oscurecerlo">
-            <div class="nav-header">
-                <img class="logo-hotel" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html"><button type="button" class="btn btn-dark">Inicio</button></a></li>
-                        <li><a href="./habitaciones.html"><button type="button" class="btn btn-dark">Habitaciones</button></a></li>
-                        <li><a href="./servicios.html"><button type="button" class="btn btn-dark">Servicios</button></a></li>
-                        <li><a href="./galeria.html"><button type="button" class="btn btn-dark">Galeria</button></a></li>
-                        <li><a href="./contacto.html"><button type="button" class="btn btn-dark">Contacto</button></a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="h1-form">
-                <h1 class="centrar-texto">Bienvenidos al Hotel Avellaneda</h1>
 
-                <form class="centrar-texto">
-                    <label for="entrada">Fecha de Entrada</label>
-                    <input id="entrada" type="date">
-                    <label for="salida">Fecha de Salida</label>
-                    <input id="salida" type="date">
-                    <label for="personas">Personas</label>
-                    <select name="" id="personas">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select>
-                    <label for="habitacion">Habitacion</label>
-                    <select name="" id="habitacion">
-                        <option value="">Doble</option>
-                        <option value="">Triple</option>
-                        <option value="">Familiar</option>
-                    </select>
-                    <button class="boton">Reservar</button>
-        
-                </form>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="logo-hotel" src="../img/hotel-logo.PNG"
+                            alt="logotipo del hotel">Hotel Avellaneda</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./habitaciones.html">Habitaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div>
+                <h1 class="centrar-texto merriweather-regular-italic">Hotel Avellaneda</h1>
             </div>
-                
+
         </div>
     </header>
     <!-- Fin del Header -->
 
     <!-- Inicio del Main -->
     <main>
-        <h2 class="centrar-texto titulo-main">Contactanos</h2>
-        <p class="centrar-texto parrafo-size">Dejanos tu mensaje y/o consulta acerca del tema de tu interes. Estamos a tu disposicion para responderte cualquier duda que tengas.</p>
+
+        <section class="section-reservas">
+            <div class="reservas-header">
+                <div class="reservas-linea"></div>
+                <h2 class="reservas-titulo">Reservar</h2>
+                <div class="reservas-linea"></div>
+            </div>
+
+            <div class="reservas-form">
+                <form>
+                    <div class="flex-form">
+                        <div class="form-item">
+                            <label for="entrada">Fecha de Entrada</label>
+                            <div>
+                                <input id="entrada" type="date">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="salida">Fecha de Salida</label>
+                            <div>
+                                <input id="salida" type="date">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="personas">Personas</label>
+                            <div>
+                                <select name="" id="personas">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="habitacion">Habitación</label>
+                            <div>
+                                <select name="" id="habitacion">
+                                    <option value="">Doble</option>
+                                    <option value="">Triple</option>
+                                    <option value="">Familiar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <button class="reservas-boton">Reservar</button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+        <div class="h2-container">
+            <h2 class="centrar-texto merriweather-light-italic">Contactanos</h2>
+            <p class="centrar-texto parrafo-size">Para más información y consultas, dejanos tu mensaje. Estamos
+                a tu disposición para ayudarte en lo que necesites.</p>
+        </div>
+
         <form class="centrar-texto form-contacto">
             <input placeholder="Nombre y Apellido" type="text">
             <input placeholder="Correo electronico" type="email">
@@ -77,57 +138,101 @@
             <button class="boton">Enviar mensaje</button>
         </form>
 
-        <!-- Falta acomodar logos -->
-        <section>
-            <h3>Email</h3>
-            <p>hotelavellaneda@gmail.com</p>
-            <img class="logos-size" src="../img/mail-logo.png" alt="Logotipo de gmail">
-        </section>
+        <div class="h2-container">
+            <h2 class="centrar-texto merriweather-light-italic">Información de Contacto</h2>
+            <p class="centrar-texto parrafo-size">Comunicate con nosotros por cualquiera de estos medios.</p>
+        </div>
 
-        <section>
-            <h3>Whatsapp</h3>
-            <p>+541122334455</p>
-            <img class="logos-size" src="../img/whatsapp-logo.jpeg" alt="Logtipo de whatsapp">
-        </section>
+        <div class="grid-contacto-container">
 
-        <section>
-            <h3>Telefono</h3>
-            <p>+541155443322</p>
-            <img class="logos-size" src="../img/telefono-logo.jpeg" alt="Logotipo de telefono">
-        </section>
+            <div class="grid-contacto-item mail">
+                <img class="logos-size" src="../img/img-mail.svg" alt="Logotipo de gmail">
+                <h3>Email</h3>
+                <p>hotelavellaneda@gmail.com</p>
+            </div>
 
-        <section class="mapa-container">
-            <h3>Ubicacion</h3>
-            <p>Donde nos encontramos y como llegar a nuestro hotel</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105073.23032163273!2d-58.367367!3d-34.615831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d434dad77b%3A0x75b7b0bd35cb0849!2sChile%2080%2C%20C1011%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1702914490445!5m2!1ses-419!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+            <div class="grid-contacto-item whatsapp">
+                <img class="logos-size" src="../img/img-whatsapp.svg" alt="Logtipo de whatsapp">
+                <h3>Whatsapp</h3>
+                <p>+541122334455</p>
+            </div>
+
+            <div class="grid-contacto-item telefono">
+                <img class="logos-size" src="../img/img-telefono.svg" alt="Logotipo de telefono">
+                <h3>Telefono</h3>
+                <p>+541155443322</p>
+            </div>
+
+            <div class="grid-contacto-item mapa">
+                <img class="logos-size" src="../img/img-ubicacion.svg" alt="Logotipo de ubicacion">
+                <h3>Ubicación</h3>
+                <p>Donde nos encontramos y como llegar a nuestro hotel</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105073.23032163273!2d-58.367367!3d-34.615831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d434dad77b%3A0x75b7b0bd35cb0849!2sChile%2080%2C%20C1011%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1702914490445!5m2!1ses-419!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
     </main>
     <!-- Fin del Main -->
 
     <!-- Inicio del Footer -->
     <footer>
-        <div class="footer-grid-container">
-            <p class="parrafo-redes">Seguinos en nuestras redes</p>
-            <div class="logos-footer">
-                <a target="_blank" href="https://www.facebook.com">
-                    <img class="logos-size" src="../img/facebook-logo.webp" alt="logotipo de facebook">
-                </a>
-                <a target="_blank" href="https://www.instagram.com">
-                    <img class="logos-size" src="../img/instagram-logo.webp" alt="logotipo de instagram">
-                </a>
-                <a target="_blank" href="https://www.tiktok.com">
-                    <img class="logos-size" src="../img/tiktok-logo.webp" alt="logotipo de tiktok">
-                </a>
+        <div class="footer-container">
+            <div class="footer-container-item">
+                <h4>CONTACTO</h4>
+                <div>
+                    <img class="logos-size" src="../img/img-ubicacion.svg" alt="logotipo de ubicacion">
+                    <h5>Ubicación</h5>
+                    <p>Chile 80, Puerto Madero. CABA</p>
+                </div>
+                <div>
+                    <img class="logos-size" src="../img/img-mail.svg" alt="logotipo de mail">
+                    <p>hotelavellaneda@gmail.com</p>
+                </div>
+                <div>
+                    <img class="logos-size" src="../img/img-telefono.svg" alt="logotipo de telefono">
+                    <p>+54 1155443322</p>
+                </div>
             </div>
-            <p class="centrar-texto parrafo-footer">Todos los derechos reservados</p>
-            <img class="logo-hotel-footer" src="../img/hotel-logo.PNG" alt="logotipo del hotel">
-                        
+
+            <div class="footer-container-item">
+                <h4>REDES SOCIALES</h4>
+                <div>
+                    <a target="_blank" href="https://www.facebook.com">
+                        <img class="logos-size" src="../img/img-facebook.svg" alt="logotipo de facebook">
+                        <p>Hotel Avellaneda</p>
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.instagram.com">
+                        <img class="logos-size" src="../img/img-instagram.svg" alt="logotipo de instagram">
+                        <p>@hotelavellaneda</p>
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.tiktok.com">
+                        <img class="logos-size" src="../img/img-tiktok.svg" alt="logotipo de tiktok">
+                        <p>@hotelavellaneda</p>
+                    </a>
+                </div>
+            </div>
+
         </div>
-        
+
+        <div class="separador"></div>
+        <div class="derechos-reservados centrar-texto">
+            <p>© 2024 HOTEL AVELLANEDA. TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+
     </footer>
     <!-- Fin del Footer -->
 
     <!-- Linkeo de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -85,6 +85,7 @@ nav .navbar-collapse .navbar-nav {
 nav .navbar-collapse .navbar-nav .nav-link:hover {
   transform: scale(1.1);
   transition: all 0.4s;
+  text-decoration: underline;
 }
 
 h1 {
@@ -189,6 +190,9 @@ h5 {
 
 .card {
   margin: 22px 20px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  box-shadow: 0px 0px 4px #000;
 }
 
 .card-body {
@@ -203,10 +207,6 @@ h5 {
   background-color: #081C15;
   transform: scale(1.1);
   transition: all 0.4s;
-}
-
-.card-item {
-  width: 18rem;
 }
 
 .carousel-padding {
@@ -224,14 +224,61 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.galeria-container .galeria-cards .card {
+  border: 2px solid #000000;
+  box-shadow: 0px 0px 4px #000;
+}
 
-.galeria-flex {
+.habitaciones-container {
+  width: 90%;
+  margin: 40px auto;
+  padding-top: 10px;
+}
+.habitaciones-container .habitaciones-titulos {
+  margin: 15px 20px;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+.habitaciones-container .habitaciones-titulos h3 {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.habitaciones-container .habitacion-cards {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 20px 10px;
+  justify-content: space-evenly;
+}
+.habitaciones-container .habitacion-cards .card {
+  border: 2px solid #000000;
+  box-shadow: 0px 0px 4px #000;
+}
+
+.cards-servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 30px 0;
+}
+.cards-servicios-container .card {
+  width: 100%;
+  margin: 22px 20px;
+  border: 2px solid #000000;
+  box-shadow: 0px 0px 4px #000;
+}
+.cards-servicios-container .card .card-img {
+  width: 100%;
+}
+.cards-servicios-container .card .card-body {
+  text-align: center;
+  background-color: rgba(8, 28, 21, 0.9254901961);
+  color: #fff;
+}
+.cards-servicios-container .card .card-body h3 {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .boton-galeria {
@@ -250,37 +297,17 @@ h5 {
   transition: all 0.4s;
 }
 
-.card-hab-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.img-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.cards-servicios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.img-galeria {
+.img-galeria-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 20px 10px;
+}
+.img-galeria-container .img-galeria {
+  border: 2px solid #000000;
+  box-shadow: 0px 0px 4px #000;
 }
 
 .form-contacto {
@@ -290,11 +317,60 @@ h5 {
   justify-content: space-evenly;
   align-items: stretch;
   row-gap: 0.5rem;
+  margin: 1rem 0;
+}
+.form-contacto .boton {
+  background-color: #000;
+  border-radius: 8px;
+}
+.form-contacto .boton:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 
-.mapa-container {
-  display: flex;
-  flex-direction: column;
+.grid-contacto-container {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.grid-contacto-container .grid-contacto-item {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+.grid-contacto-container .grid-contacto-item img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  align-self: center;
+}
+.grid-contacto-container .grid-contacto-item h3 {
+  grid-column: 2/7;
+  grid-row: 1/2;
+  margin: 0;
+  align-self: end;
+}
+.grid-contacto-container .grid-contacto-item p {
+  grid-column: 2/7;
+  grid-row: 2/3;
+}
+.grid-contacto-container .grid-contacto-item .logos-size {
+  width: 4.5rem;
+  height: 3rem;
+}
+.grid-contacto-container .mapa {
+  grid-row: 4/9;
+}
+.grid-contacto-container .mapa iframe {
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+.grid-contacto-container .mapa img {
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
 
 footer {
@@ -349,33 +425,81 @@ footer {
     justify-content: space-evenly;
   }
   .h2-container {
-    padding-left: 48px;
-    padding-right: 48px;
-  }
-  .cards-servicios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
-  }
-  iframe {
-    max-width: 75%;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
     justify-items: center;
-    align-items: stretch;
+  }
+  .habitaciones-container .habitaciones-titulos {
+    margin: 15px 60px;
+  }
+  .habitacion-cards .img-size {
+    width: 20rem;
+    height: 16rem;
+  }
+  .cards-servicios-container .card {
+    width: 40%;
+  }
+  .grid-contacto-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .grid-contacto-container .grid-contacto-item {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+  }
+  .grid-contacto-container .mail {
+    grid-row: 1/2;
+  }
+  .grid-contacto-container .mail img {
+    grid-row: 1/3;
+  }
+  .grid-contacto-container .whatsapp {
+    grid-row: 2/3;
+  }
+  .grid-contacto-container .whatsapp img {
+    grid-row: 1/3;
+  }
+  .grid-contacto-container .telefono {
+    grid-row: 3/4;
+  }
+  .grid-contacto-container .telefono img {
+    grid-row: 1/3;
+  }
+  .grid-contacto-container .mapa {
+    grid-column: 3/5;
+    grid-row: 1/4;
+  }
+  .grid-contacto-container .mapa iframe {
+    grid-column: 1/7;
   }
 }
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 6rem;
   }
+  .h2-container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
   .h2-container h2 {
     font-size: 3.5rem;
+  }
+  .habitaciones-container .habitaciones-titulos {
+    margin: 15px 100px;
+  }
+  .habitacion-cards .img-size {
+    width: 30rem;
+    height: 24rem;
   }
   .cards-servicios {
     gap: 2rem;
@@ -387,8 +511,9 @@ footer {
     width: 23rem;
     height: 16rem;
   }
-  iframe {
-    max-width: 50%;
+  .grid-contacto-container {
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
 
