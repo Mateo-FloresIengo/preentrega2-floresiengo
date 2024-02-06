@@ -1,5 +1,37 @@
-header {
+.header-index {
     background-image: url(../img/background-header-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.header-hab{
+    background-image: url(../img/hab-doble-5.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.header-servicios{
+    background-image: url(../img/piscina.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.header-galeria{
+    background-image: url(../img/lobby-4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.header-contacto{
+    background-image: url(../img/recepcion-2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +53,7 @@ header {
 
 
 nav {
-    background-color: #D8F3DC;
+    background-color: $colorPrincipal;
 
     .navbar-brand {
         font-size: 1rem;
@@ -37,12 +69,15 @@ nav {
             display: flex;
             align-items: flex-end;
 
+            .active{
+                text-decoration: underline;
+            }
+
             .nav-link{
                 &:hover{
-                    transform: scale(1.1);
-                    transition: all .4s;
-                    text-decoration: underline;
+                    @include hover(none, $colorNegro, scale(1.1), all .4s, underline)
                 }
+                
             }
         }
     }
@@ -51,12 +86,7 @@ nav {
 
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: $colorBlanco;
     font-size: 3.5rem;
     margin-top: 20rem;
-}
-
-.boton {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
 }

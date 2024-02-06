@@ -1,0 +1,15 @@
+@mixin hover($colorFondo, $colorTexto, $transform, $transition, $decoracion){
+    background-color: $colorFondo;
+    color: $colorTexto;
+    transform: $transform;
+    transition: $transition;
+    text-decoration: $decoracion;
+}
+
+@mixin flex($display, $direccion, $wrap, $justifycontent, $alignitems){
+    display: $display;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+}

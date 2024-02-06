@@ -1,55 +1,56 @@
+
 .section-reservas {
-    background-color: #081C15;
+    background-color: $colorSecundario;
+
+    .section-reservas-padding{
+        padding: 2rem 5rem;
+    }
 
     .reservas-header {
         display: grid;
+        justify-content: center;
+        align-items: center;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
-        text-align: center;
+        text-align: $centrarTexto;
         grid-template-rows: auto;
         grid-template-columns: 1fr .75fr 1fr;
         grid-auto-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
+        padding-bottom: 10px;
 
         .reservas-titulo {
-            color: rgb(255, 255, 255);
+            color: $colorBlanco;
             font-weight: 100;
         }
 
         .reservas-linea {
             height: 1px;
-            background-color: #D8F3DC;
+            background-color: $colorPrincipal;
         }
     }
 
     .reservas-form {
-        padding: 20px 15px;
 
         .flex-form {
-            color: rgb(255, 255, 255);
+            color: $colorBlanco;
             font-weight: 100;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            @include flex(flex, column, wrap, center, flex-start);
             row-gap: 10px;
 
             input {
-                background-color: #d8f3dc7d;
+                background-color: nth($list: $coloresVarios, $n: 1);
             }
 
             select {
-                background-color: #d8f3dc7d;
+                background-color: nth($list: $coloresVarios, $n: 1);
             }
 
             .reservas-boton {
-                background-color: #D8F3DC;
-                border-radius: 8px;
+                background-color: $colorPrincipal;
+                border-radius: $bordeRedondo;
 
                 &:hover {
-                    transform: scale(1.1);
-                    transition: all .4s;
+                    @include hover(none, $colorNegro, scale(1.1), all .4s, none)
                 }
             }
         }
@@ -80,7 +81,7 @@ h5 {
 
 .img-carousel {
     height: 50%;
-    max-height: 30rem;
+    max-height: 36rem;
 }
 
 .img-size {
@@ -89,36 +90,31 @@ h5 {
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #081C15;
+    @include flex(flex, row, wrap, space-evenly, normal);
+    background-color: $colorSecundario;
     width: 90%;
     margin: auto;
     margin-top: 40px;
     padding: 30px 0;
-    border-radius: 8px;
+    border-radius: $bordeRedondo;
 }
 
 .card {
     margin: 22px 20px;
-    border-radius: 8px;
-    border: 2px solid #000000;
-    box-shadow: 0px 0px 4px #000;
+    border-radius: $bordeRedondo;
+    @extend %bordeYsombra;
 }
 
 .card-body {
-    text-align: center;
-    background-color: #D8F3DC;
+    text-align: $centrarTexto;
+    background-color: $colorPrincipal;
 
     a {
-        background-color: #081c1591;
-        border: #081C15;
+        background-color: nth($list: $coloresVarios, $n: 2);
+        border: $colorSecundario;
 
         &:hover {
-            background-color: #081C15;
-            transform: scale(1.1);
-            transition: all .4s;
+            @include hover ($colorSecundario, $colorBlanco, scale(1.1), all .4s, none)
         }
     }
 }
@@ -128,19 +124,16 @@ h5 {
 }
 
 .galeria-container {
-    background-color: #081C15;
+    background-color: $colorSecundario;
     width: 90%;
     margin: 40px auto;
-    border-radius: 8px;
+    border-radius: $bordeRedondo;
 
     .galeria-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include flex(flex, row, wrap, space-evenly, normal);
 
         .card {
-            border: 2px solid #000000;
-            box-shadow: 0px 0px 4px #000;
+            @extend %bordeYsombra;
         }
     }
 }
@@ -153,7 +146,7 @@ h5 {
     .habitaciones-titulos {
         margin: 15px 20px;
         padding: 10px 0;
-        border-radius: 8px;
+        border-radius: $bordeRedondo;
 
         h3 {
             font-weight: 700;
@@ -162,22 +155,17 @@ h5 {
     }
 
     .habitacion-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include flex(flex, row, wrap, space-evenly, normal);
 
         .card {
-            border: 2px solid #000000;
-            box-shadow: 0px 0px 4px #000;
+            @extend %bordeYsombra;
         }
     }
 
 }
 
 .cards-servicios-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex(flex, row, wrap, space-evenly, normal);
     width: 90%;
     margin: auto;
     margin-top: 10px;
@@ -186,17 +174,16 @@ h5 {
     .card {
         width: 100%;
         margin: 22px 20px;
-        border: 2px solid #000000;
-        box-shadow: 0px 0px 4px #000;
+        @extend %bordeYsombra;
 
         .card-img {
             width: 100%;
         }
 
         .card-body {
-            text-align: center;
-            background-color: #081c15ec;
-            color: #fff;
+            text-align: $centrarTexto;
+            background-color: nth($list: $coloresVarios, $n: 3);
+            color: $colorBlanco;
 
             h3 {
                 font-weight: 700;
@@ -207,53 +194,42 @@ h5 {
 }
 
 .boton-galeria {
-    text-align: center;
+    text-align: $centrarTexto;
     padding-bottom: 20px;
 
     a {
-        background-color: #D8F3DC;
-        color: #000;
-        border: #081C15;
+        background-color: $colorPrincipal;
+        color: $colorNegro;
+        border: $colorSecundario;
 
         &:hover {
-            background-color: #D8F3DC;
-            color: #000;
-            transform: scale(1.1);
-            transition: all .4s;
+            @include hover ($colorPrincipal, $colorNegro, scale(1.1), all .4s, none)
         }
     }
 }
 
 .img-galeria-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex(flex, row, wrap, center, normal);
     gap: 2rem;
     padding: 20px 10px;
 
     .img-galeria {
-        border: 2px solid #000000;
-        box-shadow: 0px 0px 4px #000;
+        @extend %bordeYsombra;
     }
 }
 
 .form-contacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+    @include flex(flex, row, wrap, space-evenly, stretch);
     row-gap: 0.5rem;
     margin: 1rem 0;
 
     .boton {
-        background-color: #000;
-        border-radius: 8px;
+        background-color: $colorNegro;
+        color: $colorBlanco;
+        border-radius: $bordeRedondo;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all .4s;
+            @include hover ($colorNegro, $colorBlanco, scale(1.1), all .4s, none)
         }
     }
 }
@@ -263,8 +239,7 @@ h5 {
     grid-template-rows: repeat(8, auto);
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0.5rem 2rem 0.5rem;
 
     .grid-contacto-item{
         grid-column: 1/3;
@@ -297,8 +272,9 @@ h5 {
         grid-row: 4/9;
 
         iframe{
-            grid-column: 1/5;
+            grid-column: 1/7;
             grid-row: 3/4;
+            padding-top: 10px;
         }
         img{
             grid-column: 1/2;
@@ -307,8 +283,3 @@ h5 {
     }
 }
 
-
-// .mapa-container {
-//     display: flex;
-//     flex-direction: column;
-// }

@@ -1,16 +1,13 @@
 footer {
-    background-color: #081c15e7;
-    color: #fff;
+    background-color: nth($list: $coloresVarios, $n: 4);
+    color: $colorBlanco;
 }
 
 .footer-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, row, wrap, center, center);
     row-gap: 4rem;
     padding: 25px 0;
-    text-align: center;
+    text-align: $centrarTexto;
 
     .footer-container-item{
         margin: 0 100%;
@@ -20,7 +17,7 @@ footer {
 
         a{
             text-decoration: none;
-            color: #fff;
+            color: $colorBlanco;
         }
     }
 }
@@ -35,7 +32,7 @@ footer {
 
 .separador{
     height: 1px;
-    background-color: #D8F3DC;
+    background-color: $colorPrincipal;
     margin: 15px;
 }
 

@@ -26,13 +26,15 @@
 <body>
 
   <!-- Inicio del Header -->
-  <header>
+  <header class="header-index">
     <div class="oscurecerlo">
-      
+
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="logo-hotel" src="img/hotel-logo.PNG" alt="logotipo del hotel">Hotel Avellaneda</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html"><img class="logo-hotel" src="img/hotel-logo.PNG"
+              alt="logotipo del hotel">Hotel Avellaneda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -70,69 +72,78 @@
   <main>
 
     <section class="section-reservas">
-      <div class="reservas-header">
-        <div class="reservas-linea"></div>
-        <h2 class="reservas-titulo">Reservar</h2>
-        <div class="reservas-linea"></div>
-      </div>
 
-      <div class="reservas-form">
-        <form>
-          <div class="flex-form">
-            <div class="form-item">
-              <label for="entrada">Fecha de Entrada</label>
-              <div>
-                <input id="entrada" type="date">
+      <div class="section-reservas-padding">
+        <div class="reservas-header">
+          <div class="reservas-linea"></div>
+          <h2 class="reservas-titulo">Reservar</h2>
+          <div class="reservas-linea"></div>
+        </div>
+
+        <div class="reservas-form">
+          <form>
+            <div class="flex-form">
+              <div class="form-item">
+                <label for="entrada">Fecha de Entrada</label>
+                <div>
+                  <input id="entrada" type="date">
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="salida">Fecha de Salida</label>
-              <div>
-                <input id="salida" type="date">
+              <div class="form-item">
+                <label for="salida">Fecha de Salida</label>
+                <div>
+                  <input id="salida" type="date">
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="personas">Personas</label>
-              <div>
-                <select name="" id="personas">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                </select>
+              <div class="form-item">
+                <label for="personas">Personas</label>
+                <div>
+                  <select name="" id="personas">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="habitacion">Habitación</label>
-              <div>
-                <select name="" id="habitacion">
-                  <option value="">Doble</option>
-                  <option value="">Triple</option>
-                  <option value="">Familiar</option>
-                </select>
+              <div class="form-item">
+                <label for="habitacion">Habitación</label>
+                <div>
+                  <select name="" id="habitacion">
+                    <option value="">Doble</option>
+                    <option value="">Triple</option>
+                    <option value="">Familiar</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <button class="reservas-boton">Reservar</button>
+              <div class="form-item">
+                <button class="reservas-boton">Reservar</button>
+              </div>
+
             </div>
 
-          </div>
-
-        </form>
+          </form>
+        </div>
       </div>
 
     </section>
 
     <div class="h2-container">
       <h2 class="centrar-texto merriweather-light-italic">El Hotel</h2>
-      <p class="centrar-texto parrafo-size">El Hotel se encuentra situado en Puerto Madero, en el límite con San Telmo, dos distinguidos barrios turísticos de la Ciudad de Buenos Aires. Cercano al casino flotante, restaurantes más prestigiosos de la zona, múltiples galerías de arte de Puerto Madero, peatonales y casco antiguo de San Telmo. Con excelente acceso a los aeropuertos nacional e internacional y al Puerto de Buenos Aires, el hotel combina diseño y modernidad en todas sus instalaciones. Ofrece servicio de cable, teléfono, aire acondicionado frío/calor individual, baño con bañera, secador de cabello y kit de baño, cofre de seguridad y acceso a Internet de alta velocidad.</p>
+      <p class="centrar-texto parrafo-size">El Hotel se encuentra situado en Puerto Madero, en el límite con San Telmo,
+        dos distinguidos barrios turísticos de la Ciudad de Buenos Aires. Cercano al casino flotante, restaurantes más
+        prestigiosos de la zona, múltiples galerías de arte de Puerto Madero, peatonales y casco antiguo de San Telmo.
+        Con excelente acceso a los aeropuertos nacional e internacional y al Puerto de Buenos Aires, el hotel combina
+        diseño y modernidad en todas sus instalaciones. Ofrece servicio de cable, teléfono, aire acondicionado
+        frío/calor individual, baño con bañera, secador de cabello y kit de baño, cofre de seguridad y acceso a Internet
+        de alta velocidad.</p>
     </div>
 
     <div class="h2-container">
       <h2 class="centrar-texto merriweather-light-italic">Nuestras Habitaciones</h2>
       <p class="centrar-texto parrafo-size">Siempre pensando en satisfacer a nuestros huéspedes, ofrecemos confort,
-      modernidad y estilo. Con todas las comodidades que ofrecemos, nos aseguramos de que su estadía sea lo más
-      placentera posible.</p>
+        modernidad y estilo. Con todas las comodidades que ofrecemos, nos aseguramos de que su estadía sea lo más
+        placentera posible.</p>
     </div>
 
     <section class="cards-container">
@@ -163,7 +174,8 @@
 
     <div class="h2-container">
       <h2 class="centrar-texto merriweather-light-italic">Servicios que brindamos</h2>
-      <p class="centrar-texto parrafo-size">Para hacerte más agradable la estancia en nuestro hotel, contamos con una serie de servicios que te permitirán disfrutar al máximo de tu paso por la ciudad.</p>
+      <p class="centrar-texto parrafo-size">Para hacerte más agradable la estancia en nuestro hotel, contamos con una
+        serie de servicios que te permitirán disfrutar al máximo de tu paso por la ciudad.</p>
     </div>
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-padding" data-bs-ride="carousel">
@@ -239,7 +251,7 @@
         <a href="pages/galeria.html" class="btn btn-primary">Ir a la Galería</a>
       </div>
     </div>
-    
+
 
   </main>
   <!-- Fin del Main -->
@@ -286,7 +298,7 @@
           </a>
         </div>
       </div>
-      
+
     </div>
 
     <div class="separador"></div>
