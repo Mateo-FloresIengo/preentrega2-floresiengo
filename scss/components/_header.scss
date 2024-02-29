@@ -74,6 +74,7 @@ nav {
             }
 
             .nav-link{
+                transition: all .4s;
                 &:hover{
                     @include hover(none, $colorNegro, scale(1.1), all .4s, underline)
                 }
@@ -87,6 +88,6 @@ nav {
 
 h1 {
     color: $colorBlanco;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 20rem;
 }

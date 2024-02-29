@@ -6,7 +6,7 @@
     .section-reservas {
         .reservas-form {
             .flex-form {
-                @include flex(flex, row, wrap, space-evenly, flex-end);
+                @include flex(flex, row, wrap, space-evenly, flex-start);
             }
         }
     }
